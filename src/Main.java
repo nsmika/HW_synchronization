@@ -36,7 +36,10 @@ public class Main {
                 .collect(Collectors.toList());
 
 
-        System.out.println("Самое частое количество повторений " + maxValueKeys.toString().replaceAll("^\\[|]$", "") + " (встретилось " + sizeToFreq.get(maxValueKeys.get(0)) + " раз)");
+        System.out.println("Самое частое количество повторений "
+                + maxValueKeys.toString().replaceAll("^\\[|]$", "")
+                + " (встретилось " + sizeToFreq.get(maxValueKeys.get(0)) + " раз)");
+
         System.out.println("Другие размеры:");
         sizeToFreq.entrySet()
                 .stream()
